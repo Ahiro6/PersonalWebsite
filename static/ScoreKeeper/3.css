@@ -1,0 +1,61 @@
+.keeper {
+    width: 50%;
+    margin: 0 auto;
+    background:#191717;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifc;
+    border-radius: 1em;
+    
+}
+
+.keeper img {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+.keeper div {
+    padding: 0.5em;
+    
+}
+
+.keeper div div{
+    display: flex;
+    text-align: center;
+}
+
+.keeper button{
+    font-weight: bolder;
+    border: none;
+    border-radius: 1em;
+    margin: 0 0.5em;
+    width: 100%;
+    height: 2em;
+    color: white;
+    background:#d41111;
+    text-transform: uppercase;
+}
+
+p {
+    text-align:center;
+    font-weight: normal;
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 1em;
+    border: white solid;
+}
+
+select {
+  border-radius: 1em;
+  appearance: none;
+  background-color:#ffffff;
+  border: none;
+  padding: 0 1em 0 0;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+select option {
+  color: black;
+  text-align: center;
+}

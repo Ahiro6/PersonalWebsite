@@ -1,0 +1,10 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="guess">
+    <p id="display">Enter max number!</p>
+    <input type="number" id="user_guess">
+    <button onclick="guess()">Sumbit</button>
+
+    <script src="{{ url_for('static', filename='guess/guess.js') }}"></script>
+</div>
+{%endblock%}

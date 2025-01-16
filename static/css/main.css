@@ -1,0 +1,107 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifc;
+    color: #060;
+    font-size: 20px;
+  }
+  
+  /*
+   * Formatting the header area
+   */
+  
+  nav {
+    padding: 0 1em;
+    background-color: #3889e6;
+    height: 2em;
+    width: 100%;
+    opacity: 0.9;
+    margin-bottom: 0.5em;
+    position: fixed;
+  }
+  
+  nav h1.logo {
+    display:inline;
+    margin: 0;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+  }
+
+  nav h1.logo:hover {
+    color: rgb(226, 228, 208);
+    text-decoration: none;
+  }
+  
+  /*
+   * Center the body content
+   */
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+  
+  div.home {
+    padding: 10px 0 30px 0;
+    background-color: #E6E6FA;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+
+div.about {
+  padding: 10px 0 30px 0;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+div.guess {
+  padding: 10px 0 30px 0;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+h2 {
+font-size: 3em;
+text-align: center;
+letter-spacing: -2px;
+}
+.container p{
+    text-align: center;
+}
+
+h3 {
+font-size: 1.7em;
+font-weight: 100;
+margin-top: 30px;
+text-align: center;
+letter-spacing: -1px;
+color: #999;
+}
+
+.menu {
+float: right;
+margin-top: 0.5em;
+}
+
+.menu li {
+display: inline;
+}
+
+.menu li + li {
+margin:0 2em;
+
+}
+
+.menu li a {
+color: #444;
+text-decoration: none;
+}

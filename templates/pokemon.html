@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website of Pokemons</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='pokemon/pokemon.css') }}">
+</head>
+<body>
+<nav>
+    <h1 class="logo">Pokemon</h1>
+    <a href="{{  url_for('Portfolio')  }}">Exit</a>
+</nav>
+<section>
+    <input type="number">
+    <button onclick="get()">Choose</button>
+    <div class="pokemon">
+        
+    </div>
+</section>
+<div class="container">
+    
+</div>
+<script src="{{ url_for('static', filename='pokemon/pokemon-data.js') }}"></script>
+</body>
+</html>
