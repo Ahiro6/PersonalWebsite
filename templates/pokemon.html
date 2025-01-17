@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Personal Website of Pokemons</title>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='pokemon/pokemon.css') }}">
-</head>
-<body>
-<nav>
-    <h1 class="logo">Pokemon</h1>
-    <a href="{{  url_for('Portfolio')  }}">Exit</a>
-</nav>
-<section>
-    <input type="number">
-    <button onclick="get()">Choose</button>
-    <div class="pokemon">
+{%extends "layout.html" %}
+{%block content%}
+
+<div>
+    <section class="poke-nav">
+        <h1>Pokemon</h1>
+        <a href="{{  url_for('portfolio')  }}">Exit</a>
+
+        <input type="number">
+        <button onclick="get()">Choose</button>
         
+    </section>
+    <div>
+        <div class="pokemon">
+
+        </div>
+        <div class="poke-container">
+
+        </div>
     </div>
-</section>
-<div class="container">
-    
+
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='pokemon/pokemon.css') }}">
+
+    <script src="{{ url_for('static', filename='pokemon/pokemon-data.js') }}"></script>
 </div>
-<script src="{{ url_for('static', filename='pokemon/pokemon-data.js') }}"></script>
-</body>
-</html>
+
+{%endblock%}

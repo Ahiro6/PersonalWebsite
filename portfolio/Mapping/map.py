@@ -1,27 +1,26 @@
 import folium
 # import pandas as pd
 # from coordinates import longitude, latitude, names, area
-from portfolio.Mapping.for_pandas import GetData
+from for_pandas import GetData
 
 # folium.Popup(str(na), parse_html=True)
 
 
 # volcano obj
-vol = GetData("PersonnalWebsite/static/mapping/volcanoes.txt", "txt")
+vol = GetData("volcanoes.txt", "txt")
 latitude_v = vol.get_column("LAT")
 longitude_v = vol.get_column("LON")
 name = vol.get_column("NAME")
 elev = vol.get_column("ELEV")
 
 # resort obj
-res = GetData("PersonnalWebsite/static/mapping/resorts.csv", "csv")
+res = GetData("resorts.csv", "csv")
 latitude = res.get_column("Latitude")
 longitude = res.get_column("Longitude")
 names = res.get_column("International Name")
 area = res.get_column("Area")
 
-maps = folium.Map(location=[-26.2041, 28.0473], zoom_start=6, tiles="Stamen Terrain", min_zoom=2.5)
-# tiles = "Stamen Terrain"
+maps = folium.Map(location=[-26.2041, 28.0473], zoom_start=6, min_zoom=2.5)
 
 icon_blue = folium.Icon(color="blue")
 icon_green = folium.Icon(color="green")
@@ -57,7 +56,7 @@ def color_resort(area_resort):
         return '#00264d'
 
 
-pg.add_child(folium.GeoJson(data=open("PersonnalWebsite/static/mapping/world.json", "r", encoding="utf-8-sig").read(),
+pg.add_child(folium.GeoJson(data=open("world.json", "r", encoding="utf-8-sig").read(),
                             style_function=lambda x: {
                                 'fillColor': 'yellow' if 1000 < x['properties']['POP2005'] < 20000000
                                 else 'orange' if 20000000 < x['properties']['POP2005'] < 40000000
@@ -82,4 +81,4 @@ myCO_group.add_child(mark_myLoc)
 maps.add_child(myCO_group)
 
 maps.add_child(folium.LayerControl())
-maps.save("PersonnalWebsite/templates/Maps.html")
+maps.save("../../templates/partials/Maps.html")

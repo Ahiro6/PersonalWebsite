@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Personal Website of Adriaan Mostert</title>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='ScoreKeeper/3.css') }}">
-</head>
-<body>
+{% extends "layout.html" %}
+{%block content %}
+
+<div>
     <section class="keeper">
+        
         <img src="https://biz-file.com/c/1608/354694-625x325.jpg?2">
         <div>
             <p id="score"> 0 : 0</p>
@@ -14,14 +11,16 @@
                 <select id="max">
                     
                 </select>
-
+                
                 <button id="one"> Add p1 </button>
                 <button id="two"> Add p2 </button>
                 <button id="re"> Reset </button>
             </div>
         </div>
     </section>
-
+    
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='ScoreKeeper/3.css') }}">
     <script src="{{  url_for('static', filename='ScoreKeeper/19.js')  }}"></script>
-</body>
-</html>
+</div>
+
+{%endblock%}

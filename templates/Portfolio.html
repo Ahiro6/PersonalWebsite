@@ -1,12 +1,13 @@
 {%extends "layout.html"%}
 {%block content%}
-<div class = "home">
+<div class="home">
     <h2>Portfolio</h2>
-    <p>Here is one of my projects</p>
-    <a href="{{  url_for('Maps')  }}">Mapping</a>
-    <a href="{{  url_for('pokemon')  }}">Pokemon</a>
-    <a href="{{  url_for('guess')  }}">Guess</a>
-    <a href="{{  url_for('scorekeeper') }}">ScoreKeeper</a>
-    <a>Snake game</a>
+    <p>Here are some of my projects:</p>
+    <ul>
+        <li><a href="{{  url_for('map')  }}">Mapping</a></li>
+        <li><a href="{{  url_for('pokemon')  }}">Pokemon</a></li>
+        <li><a href="{{  url_for('guess')  }}">Guess</a></li>
+        <li><a href="{{  url_for('scorekeeper') }}">ScoreKeeper</a></li>
+    </ul>
 </div>
 {%endblock%}

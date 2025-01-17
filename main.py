@@ -2,7 +2,6 @@ from flask import Flask, render_template
 # import portfolio.Mapping.map
 app = Flask(__name__)
 
-
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -12,8 +11,8 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route("/Portfolio/")
-def Portfolio():
+@app.route("/portfolio/")
+def portfolio():
     return render_template("Portfolio.html")
 
 
@@ -22,9 +21,9 @@ def guess():
     return render_template("guess.html")
 
 
-@app.route("/Maps/")
-def Maps():
-    return render_template("Maps.html")
+@app.route("/map/")
+def map():
+    return render_template("Map.html")
 
 @app.route("/pokemon/")
 def pokemon():
@@ -35,8 +34,5 @@ def scorekeeper():
     return render_template("Score.html")
 
 
-
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+app.run(debug=True)

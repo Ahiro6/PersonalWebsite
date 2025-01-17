@@ -24,7 +24,7 @@ let create = (i) => {
     let poke = {
         lin: link + i + ".png",
         num: i,
-        pokemon: document.createElement("div"),
+        pokemon: document.createElement("span"),
         img: document.createElement("img"),
         label: document.createElement("span")
     };

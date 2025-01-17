@@ -2,12 +2,6 @@ let input = document.getElementById("user_guess");
 let display = document.getElementById("display");
 let guess1 = document.querySelector("body");
 
-for(let i = 0; i < 100; i++) {
-    let b = document.createElement("button");
-    guess1.appendChild(b);
-    b.innerText = "Wazzap";
-}
-
 let guess_amount = -1;
 let max = 0;
 let num = 0;

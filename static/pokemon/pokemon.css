@@ -1,8 +1,22 @@
-.container div {
+.poke-container div {
     display: inline-block;
     text-align: center;
 }
 
-.container div img {
+.poke-container span img{
+    display: inline;
+}
+
+.pokemon div img {
+    display: block;
+}
+
+.poke-nav {
+    padding-top: 3em;
+    display: block;
+    margin-bottom: 3em;
+}
+
+.poke-nav a{
     display: block;
 }

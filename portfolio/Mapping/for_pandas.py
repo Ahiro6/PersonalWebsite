@@ -6,11 +6,11 @@ class GetData:
     def __init__(self, data, type_data, divider=","):
         self.type = type_data
         if self.type == "txt" or self.type == "csv":
-            self.name = pd.read_csv(data, divider)
+            self.name = pd.read_csv(data, sep=divider)
         elif self.type == "json":
-            self.name = pd.read_json(data, divider)
+            self.name = pd.read_json(data, sep=divider)
         elif self.type == "excel":
-            self.name = pd.read_excel(data, divider)
+            self.name = pd.read_excel(data, sep=divider)
 
     def get_column(self, column):
         selected_data = list(self.name[column])
