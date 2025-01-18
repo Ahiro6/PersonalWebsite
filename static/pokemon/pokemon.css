@@ -9,6 +9,7 @@
 
 .pokemon div img {
     display: block;
+    height: 20em;
 }
 
 .poke-nav {
